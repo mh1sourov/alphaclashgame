@@ -7,16 +7,106 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="./style/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <section class="Home">
+<main class="bg-[#010313] min-h-screen bg-[url(./images/background.png)] bg-no-repeat bg-center">
+<!-- Home section -->
+    <section class="Home flex flex-col items-center justify-center min-h-screen">
+        <h1 class="text-9xl font-normal font-[anton] text-white">ALPHABET CLASH</h1>
+        <p class="text-2xl font-medium text-white m-2">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+        <button id="startPlaybtn" class="bg-white rounded-md w-[130px] h-[60px] text-black font-bold m-2 hover:blur-md duration-1000">Play Now</button>
         
     </section>
 
+<!-- Home section ends -->
 
-    <section class="playground"> </section>
 
+<!-- playground section start here -->
+    <section class="playground flex flex-col justify-center items-center min-h-screen gap-8 hidden">
+        <!-- art board -->
 
-    <section class="score"> </section>
+        <div class="artboard artboard-horizontal phone-6 border-8 border-gray-900 bg-gray-200 flex justify-center">
+
+     
+
+          <div>
+                   
+          <div class="bg-gray-900 rounded-b-2xl h-[30px]">
+            <p class="px-4">Don't Watch Keyboard While Playing</p>
+          </div>
+
+            <div class="flex justify-center items-center h-full">
+                <p class="text-7xl text-black font-extrabold">Y</p>
+              </div>
+          </div>
+
+        </div>
+     
+
+        <!-- art board -->
+
+        <!-- keyboard -->
+
+<div>
+
+    <div class="my-1 flex w-full justify-center gap-1">
+        <kbd class="kbd">q</kbd>
+        <kbd class="kbd">w</kbd>
+        <kbd class="kbd">e</kbd>
+        <kbd class="kbd">r</kbd>
+        <kbd class="kbd">t</kbd>
+        <kbd class="kbd">y</kbd>
+        <kbd class="kbd">u</kbd>
+        <kbd class="kbd">i</kbd>
+        <kbd class="kbd">o</kbd>
+        <kbd class="kbd">p</kbd>
+      </div>
+      <div class="my-1 flex w-full justify-center gap-1">
+        <kbd class="kbd">a</kbd>
+        <kbd class="kbd">s</kbd>
+        <kbd class="kbd">d</kbd>
+        <kbd class="kbd">f</kbd>
+        <kbd class="kbd">g</kbd>
+        <kbd class="kbd">h</kbd>
+        <kbd class="kbd">j</kbd>
+        <kbd class="kbd">k</kbd>
+        <kbd class="kbd">l</kbd>
+      </div>
+      <div class="my-1 flex w-full justify-center gap-1">
+        <kbd class="kbd">z</kbd>
+        <kbd class="kbd">x</kbd>
+        <kbd class="kbd">c</kbd>
+        <kbd class="kbd">v</kbd>
+        <kbd class="kbd">b</kbd>
+        <kbd class="kbd">n</kbd>
+        <kbd class="kbd">m</kbd>
+        <kbd class="kbd">/</kbd>
+      </div>
+
+</div>
+
+        <!-- keyboard -->
+
+        <!-- button -->
+           <div class="flex justify-between w-[65%]">
+            <button class="btn btn-secondary w-[120px] h-[50px] rounded-full flex items-center justify-center">Life<span>1</span></button>
+            <button class="btn btn-secondary w-[120px] h-[50px] rounded-full">Score</button>
+           </div>
+        <!-- button -->
+     </section>
+
+<!-- plaground section ends here -->
+    <section class="score  hidden">
+        <div class="min-h-screen flex justify-center items-center">
+            <div class=" w-96 h-80 bg-grad bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ... rounded-md flex flex-col items-center justify-center shadow-2xl border-1 border-red-100 ">
+                 <h1 class="text-7xl text-white font-bold">Score: <span>14</span></h1>
+                 <button class="bg-white rounded-md w-[130px] h-[60px] text-black font-bold m-2 hover:blur-md duration-1000">Play Again</button>
+                 <p class="text-sm font-bold text-black">Practice will make you pro!</p>
+            </div>
+        </div>
+    </section>
+<script src="./js/clash.js"></script>
+</main>
 </body>
 </html>
