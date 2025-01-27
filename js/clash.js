@@ -1,4 +1,38 @@
 
+
+
+function handleKeyboardButtonPressed(event){
+    // console.log("button Pressed")?
+let playerPressed = event.key;
+
+console.log("player Pressed",playerPressed);
+
+let displayedAlphabet = document.getElementById("screenAlphabet");
+let showedAlphabet = (displayedAlphabet.innerText);
+console.log(showedAlphabet);
+
+if(playerPressed === showedAlphabet){
+    // console.log("Claps Claps you successfully pressed right Button")
+   
+    continueGame()
+    let specificKey = document.getElementById(playerPressed);
+    specificKey.classList.remove("bg-pink-700")
+    console.log(elementID);
+
+}
+else{
+console.log("Try Again");
+}
+
+
+}
+
+document.addEventListener("keyup", handleKeyboardButtonPressed)
+
+
+
+
+// first part
 let string = "abcdefghijklmnopqrstuvwxyz"
 function continueGame(){
 
@@ -35,4 +69,6 @@ function playNow(){
 function setBackgroundColor(elementID){
 let specificKey = document.getElementById(elementID);
 specificKey.classList.add("bg-pink-700")
+
+
 }
